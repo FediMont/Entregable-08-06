@@ -1,0 +1,29 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"></head>
+<body>
+    <div class="containter text-center m-2">
+    <div class="rounded d-inline-block p-3 mb-2 bg-secondary text-white"><b>Bibliotecas encontradas</b></div>  
+    </div>  
+        <div class="containter">
+            <div class="row">
+                {% for biblioteca in biblioteca %}  
+                <div class="col-3">  
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="{{biblioteca.imagen}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title text-center">{{biblioteca.nombre}}</h5>
+                    <p class="card-text">{{biblioteca.apertura}}</p>
+                    <br>
+                    <a class="btn btn-outline-primary m-2" href="{{biblioteca.link}}" role="button">Sitio Web</a>
+                    </div>
+                </div>
+                </div>  
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

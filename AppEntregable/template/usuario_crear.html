@@ -1,0 +1,22 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<center><h1>Cargar o Buscar Usuarios </h1></center>
+<body>
+    <br>
+    <center>
+        <form action="" method="POST">{% csrf_token %}
+        
+            <table>
+        
+                <center>{{ miFormulario.as_table }}
+        
+            </table>
+        <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </center>
+    <br>
+</body>
+{% endblock %}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'Inicio'%}">Blog.it</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'Usuario'%}">Usuarios</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'textos'%}">Textos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'bibliotecas'%}">Bibliotecas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/static/assets/img/el-gato-con-botas.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>El gato con botas</h1>
+                            <span class="subheading">Charles Perrault</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Había una vez un molinero pobre que cuando murió sólo pudo dejar a sus hijos por herencia el molino, un asno y un gato. En el reparto el molino fue para el mayor, el asno para el segundo y el gato para el más pequeño. Éste último se lamentó de su suerte en cuanto supo cuál era su parte.</p>
+                        <p>- ¿Y ahora qué haré? Mis hermanos trabajarán juntos y harán fortuna, pero yo sólo tengo un pobre gato.</p>
+                        <p>El gato, que no andaba muy lejos, le contestó:</p>
+                        <p>- No os preocupéis mi señor, estoy seguro de que os seré más valioso de lo que pensáis.</p>
+                        <p>- ¿Ah sí? ¿Cómo?, dijo el amo incrédulo</p>
+                        <p>- Dadme un par de botas y un saco y os lo demostraré.</p>
+                        <p>El amo no acababa de creer del todo en sus palabras, pero como sabía que era un gato astuto le dio lo que pedía.</p>
+                        <p>El gato fue al monte, llenó el saco de salvado y de trampas y se hizo el muerto junto a él. Inmediatamente cayó un conejo en el saco y el gato puso rumbo hacia el palacio del Rey.</p>
+                        <p>- Buenos días majestad, os traigo en nombre de mi amo el marqués de Carabás - pues éste fue el nombre que primero se le ocurrió - este conejo.</p>
+                        <p>- Muchas gracias gato, dadle las gracias también al señor Marqués de mi parte.</p>
+                        <p>Al día siguiente el gato cazó dos perdices y de nuevo fue a ofrecérselas al Rey, quien le dio una propina en agradecimiento.</p>
+                        <p>Los días fueron pasando y el gato continuó durante meses llevando lo que cazaba al Rey de parte del Marqués de Carabás.</p>
+                        <p>Un día se enteró de que el monarca iba a salir al río junto con su hija la princesa y le dijo a su amo:</p>
+                        <p>- Haced lo que os digo amo. Acudid al río y bañaos en el lugar que os diga. Yo me encargaré del resto.</p>
+                        <p>El amo le hizo caso y cuando pasó junto al río la carroza del Rey, el gato comenzó a gritar diciendo que el marqués se ahogaba. Al verlo, el Rey ordenó a sus guardias que lo salvaran y el gato aprovechó para contarle al Rey que unos forajidos habían robado la ropa del marqués mientras se bañaba. El Rey, en agradecimiento por los regalos que había recibido de su parte mandó rápidamente que le llevaran su traje más hermoso. Con él puesto, el marqués resultaba especialmente hermoso y la princesa no tardó en darse cuenta de ello. De modo que el Rey lo invitó a subir a su carroza para dar un paseo.</p>
+                        <p>El gato se colocó por delante de ellos y en cuanto vio a un par de campesinos segando corrió hacia ellos.</p>
+                        <p>- Buenas gentes que segáis, si no decís al Rey que el prado que estáis segando pertenece al señor Marqués de Carabás, os harán picadillo como carne de pastel.</p>
+                        <p>Los campesinos hicieron caso y cuando el Rey pasó junto a ellos y les preguntó de quién era aquél prado, contestaron que del Marqués de Carabás.</p>
+                        <p>Siguieron camino adelante y se cruzaron con otro par de campesinos a los que se acercó el gato.</p>
+                        <p>- Buenas gentes que segáis, si no decís al Rey que todos estos trigales pertenecen al señor Marqués de Carabás, os harán picadillo como carne de pastel.</p>
+                        <p>Y en cuanto el Rey preguntó a los segadores, respondieron sin dudar que aquellos campos también eran del marqués.</p>
+                        <p>Continuaron su paseo y se encontraron con un majestuoso castillo. El gato sabía que su dueño era un ogro así que fue a hablar con el.</p>
+                        <p>- He oído que tenéis el don de convertiros en cualquier animal que deseéis. ¿Es eso cierto?</p>
+                        <p>- Pues claro. Veréis cómo me convierto en león</p>
+                        <p>Y el ogro lo hizo. El pobre gato se asustó mucho, pero siguió adelante con su hábil plan.</p>
+                        <p>- Ya veo que están en lo cierto. Pero seguro que no sóis capaces de convertiros en un animal muy pequeño como un ratón.</p>
+                        <p>- ¿Ah no? ¡Mirad esto!</p>
+                        <p>El ogro cumplió su palabra y se convirtió en un ratón, pero entonces el gato fue más rápido, lo cazó de un zarpazo y se lo comió.</p>
+                        <p>Así, cuando el Rey y el Marqués llegaron hasta el castillo no había ni rastro del ogro y el gato pudo decir que se encontraban en el estupendo castillo del Marqués de Carabás.</p>
+                        <p>El Rey quedó fascinado ante tanto esplendor y acabó pensando que se trataba del candidato perfecto para casarse con su hija.</p>
+                        <p>El Marqués y la princesa se casaron felizmente y el gato sólo volvió a cazar ratones para entretenerse.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

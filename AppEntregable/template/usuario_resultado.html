@@ -1,0 +1,26 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<body>
+    <center>
+        {%if nombre %}
+            <center><h1> Resultados de busqueda:</h1></center>
+                {% for usuario in nombre %}
+                    <div class="col-3">  
+                        <div class="card m-2" style="width: 18rem;">
+                        <img src='/static/assets/img/usuario.jpg' class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h6 class="card-title text-center">Usuario: {{usuario.nombre_de_usuario}}</h6>
+                            <h6 class="card-title text-center">Nombre: {{usuario.nombre}}</h6>
+                            <h6 class="card-title text-center">Apellido: {{usuario.apellido}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+        {% else %}
+            <center><h1> No se encontro el usuario </h1></center>
+        {% endif %}
+    </center>
+</body>
+{% endblock %}

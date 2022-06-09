@@ -1,0 +1,32 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"></head>
+<body>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                {% for texto in texto %}
+                <div class="post-preview">
+                    <a href="{{texto.link_texto}}">
+                        <h2 class="post-title">{{texto.nombre_libro}}</h2>
+                        <h4 class="post-subtitle">{{texto.descripcion}}</h4>
+                    </a>
+                    <p class="post-meta">
+                        Cuento de <a href={{texto.link_autor}}>{{texto.autor}}</a>
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4" />
+                {% endfor %}
+                <div class="d-flex justify-content-center mb-4">
+                    <a class="btn btn-primary m-2" href="{% url 'crear_libro' %}">Crear cuento</a>
+                    <a class="btn btn-primary m-2" href="{% url 'texto_buscador' %}">Buscar cuento</a>
+                    <a class="btn btn-primary m-2" href="https://www.google.com/search?q=cuentos+cortos&oq=cuentos+&aqs=chrome.0.69i59j0i131i433i512j69i57j0i131i433i512j69i60l4.2595j0j7&sourceid=chrome&ie=UTF-8">Más cuentos en la web→</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}

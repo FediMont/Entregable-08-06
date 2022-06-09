@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"></head> 
+<form class="form-inline m-3" action="{% url 'busca_biblio' %}" method="GET">
+    <input class="form-control" type="text" placeholder="Buscar por nombre" aria-label="Search" name = "search">
+    <button class="btn btn-outline-success ml-4" type="submit">Buscar</button>
+</form>
+<a class="btn btn-outline-dark m-3" href="{% url 'biblio_list' %}" role="button">Ver listado completo</a>
+<a class="btn btn-outline-primary m-3" href="{% url 'carga_biblio' %}" role="button">Sumar Biblioteca</a>
+<a class="btn btn-outline-danger m-3" href="{% url 'Inicio' %}"role="button">Eliminar Biblioteca</a>
+<br>
+<br>
+{% endblock %}

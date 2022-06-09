@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static %}
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="{% url 'Inicio'%}">Blog.it</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'Usuario'%}">Usuarios</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'textos'%}">Textos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{% url 'bibliotecas'%}">Bibliotecas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/static/assets/img/hansel-gretel.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Hänsel y Gretel</h1>
+                            <span class="subheading">Hermanos Grimm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Había una vez un leñador y su esposa que vivían en el bosque en una humilde cabaña con sus dos hijos, Hänsel y Gretel. Trabajaban mucho para darles de comer pero nunca ganaban lo suficiente. Un día viendo que ya no eran capaces de alimentarlos y que los niños pasaban mucha hambre, el matrimonio se sentó a la mesa y amargamente tuvo que tomar una decisión.</p>
+                        <p>- No podemos hacer otra cosa. Los dejaremos en el bosque con la esperanza de que alguien de buen corazón y mejor situación que nosotros pueda hacerse cargo de ellos, dijo la madre.</p>
+                        <p>Los niños, que no podían dormir de hambre que tenían, oyeron toda la conversación y comenzaron a llorar en cuanto supieron el final que les esperaba. Hänsel, el niño, dijo a su hermana:
+                            - No te preocupes. Encontraré la forma de regresar a casa. Confía en mí.</p>
+                        <p>Así que al día siguiente fueron los cuatro al bosque, los niños se quedaron junto a una hoguera y no tardaron en quedarse dormidos. Cuando despertaron no había rastro de sus padres y la pequeña Gretel empezó a llorar.</p>
+                        <p>- No llores Hänsel. He ido dejando trocitos de pan a lo largo de todo el camino. Sólo tenemos que esperar a que la Luna salga y podremos ver el camino que nos llevará a casa.</p>
+                        <p>Pero la Luna salió y no había rastro de los trozos de pan: se los habían comido las palomas.</p>
+                        <p>Así que los niños anduvieron perdidos por el bosque hasta que estuvieron exhaustos y no pudieron dar un paso más del hambre que tenían. Justo entonces, se encontraron con una casa de ensueño hecha de pan y cubierta de bizcocho y cuyas ventanas eran de azúcar. Tenían tanta hambre, que enseguida se lanzaron a comer sobre ella. De repente se abrió la puerta de la casa y salió de ella una vieja que parecía amable.</p>
+                        <p>- Hola niños, ¿qué hacéis aquí? ¿Acaso tenéis hambre?</p>
+                        <p>Los pobres niños asintieron con la cabeza.</p>
+                        <p>- Anda, entrad dentro y os prepararé algo muy rico.</p>
+                        <p>La vieja les dio de comer y les ofreció una cama en la que dormir. Pero pese a su bondad, había algo raro en ella.</p>
+                        <p>Por la mañana temprano, cogió a Hänsel y lo encerró en el establo mientras el pobre no dejaba de gritar.</p>
+                        <p>- ¡Aquí te quedarás hasta que engordes!, le dijo</p>
+                        <p>Con muy malos modos despertó a su hermana y le dijo que fuese a por agua para preparar algo de comer, pues su hermano debía engordar cuanto antes para poder comérselo. La pequeña Gretel se dio cuenta entonces de que no era una vieja, sino una malvada bruja.</p>
+                        <p>Pasaban los días y la bruja se impacientaba porque no veía engordar a Hänsel, ya que este cuando le decía que le mostrara un dedo para ver si había engordado, siempre la engañaba con un huesecillo aprovechándose de su ceguera.</p>
+                        <p>De modo un día la bruja se cansó y decidió no esperar más.</p>
+                        <p>- ¡Gretel, prepara el horno que vas a amasar pan! ordenó a la niña.</p>
+                        <p>La niña se imaginó algo terrible, y supo que en cuanto se despistara la bruja la arrojaría dentro del horno.</p>
+                        <p>- No sé cómo se hace - dijo la niña
+                            - ¡Niña tonta! ¡Quita del medio!</p>
+                        <p>Pero cuando la bruja metió la cabeza dentro del horno, la pequeña le dio un buen empujón y cerró la puerta. Acto seguido corrió hasta el establo para liberar a su hermano.</p>
+                        <p>Los dos pequeños se abrazaron y lloraron de alegría al ver que habían salido vivos de aquella horrible situación. Estaban a punto de marcharse cuando se les ocurrió echar un vistazo por la casa de la bruja y, ¡qué sorpresa! Encontraron cajas llenas de perlas y piedras preciosas, así que se llenaron los bolsillos y se dispusieron a volver a casa.</p>
+                        <p>Pero cuando llegaron al río y vieron que no había ni una tabla ni una barquita para cruzarlos creyeron que no lo lograrían. Menos mal que por allí pasó un gentil pato y les ayudó amablemente a cruzar el río.</p>
+                        <p>Al otro lado de la orilla, continuaron corriendo hasta que vieron a lo lejos la casa de sus padres, quienes se alegraron muchísimo cuando los vieron aparecer, y más aún, cuando vieron lo que traían escondido en sus bolsillos. En ese instante supieron que vivirían el resto de sus días felices los cuatro y sin pasar penuria alguna.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
