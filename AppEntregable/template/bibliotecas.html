@@ -2,6 +2,11 @@
 {% load static %}
 
 {% block contenidoQueCambia %}
+
+{% if mensaje %}
+    <div class="rounded d-inline-block p-3 m-2 bg-success text-white">{{mensaje}}</div>
+{% endif %}
+
 <div class="mx-auto" style="width: 400px;">
     <form class="form-inline m-3" action="{% url 'busca_biblio' %}" method="GET">
         <input class="form-control" type="text" placeholder="Buscar por nombre" aria-label="Search" name = "search">
@@ -11,7 +16,7 @@
 <div class="mx-auto" style="width: 800px;">
     <a class="btn btn-outline-dark m-3" href="{% url 'biblio_list' %}" role="button">Ver listado completo</a>
     <a class="btn btn-outline-primary m-3" href="{% url 'carga_biblio' %}" role="button">Sumar Biblioteca</a>
-    <a class="btn btn-outline-danger m-3" href="{% url 'Inicio' %}"role="button">Eliminar Biblioteca</a>
+    <a class="btn btn-outline-danger m-3" href="{% url 'inicio' %}"role="button">Eliminar Biblioteca</a>
     <br>
     <br>
 </div>

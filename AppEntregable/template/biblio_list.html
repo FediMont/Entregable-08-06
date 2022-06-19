@@ -8,7 +8,8 @@
   </div>
 <div class="containter">
   <div class="row">
-    {% for biblioteca in bibliotecas %}  
+<!-- Donde dice object_list antes tenia el nombre del context (bibliotecas) -->
+    {% for biblioteca in object_list %} 
       <div class="col-3">  
         <div class="card m-2" style="width: 18rem;">
           <img src="{{biblioteca.imagen}}" class="card-img-top" alt="...">
@@ -19,7 +20,9 @@
             <p class="card-text">{{biblioteca.localidad}}</p>
             <p class="card-text">{{biblioteca.provincia}}</p>
             <a class="btn btn-outline-primary m-2" href="{{biblioteca.link}}" role="button">Sitio Web</a>
-          </div>
+            <a class="btn btn-outline-dark m-2" href="/biblio_detalle/{{biblioteca.id}}/" role="button">Ver detalles</a>
+            <a class="btn btn-outline-danger m-2" href="{% url 'Inicio' %}" role="button">Eliminar Biblioteca</a>
+            </div>
         </div>
       </div>  
     {% endfor %}

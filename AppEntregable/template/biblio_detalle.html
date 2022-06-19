@@ -1,0 +1,22 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+<body>
+    <div class="mx-auto" style="width: 400px;">   
+        <div class="rounded d-inline-block p-3 mb-2 bg-secondary text-white"><b>Detalle de {{object.nombre}}</b></div>                 
+            <div class="card m-2" style="width: 18rem;">
+                <img src="{{object.imagen}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title text-center">{{object.nombre}}</h5>
+                <p class="card-text">{{object.apertura}}</p>
+                <a class="btn btn-outline-primary m-2" href="{{object.link}}" role="button">Sitio Web</a> 
+            </div>
+        </div>
+        <a class="btn btn-outline-dark m-2" href="/biblio_editar/{{object.id}}/" role="button">Editar</a>
+        <a class="btn btn-outline-danger m-2" href="/biblio_eliminar/{{object.id}}/" role="button">Eliminar</a>
+    </div>
+    <br>
+    <br>
+</body>
+{% endblock %}

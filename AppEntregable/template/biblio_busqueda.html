@@ -3,10 +3,10 @@
 
 {% block contenidoQueCambia %}
 <body>
-    <div class="containter text-center m-2">
+    <div class="container text-center m-2">
     <div class="rounded d-inline-block p-3 mb-2 bg-secondary text-white"><b>Bibliotecas encontradas</b></div>  
     </div>  
-        <div class="containter">
+        <div class="container">
             <div class="row">
                 {% for biblioteca in biblioteca %}  
                 <div class="col-3">  
@@ -24,5 +24,10 @@
             </div>
         </div>
     </div>
+{% if errors %}    
+    <div class="rounded d-inline-block p-3 m-2 bg-danger text-white">
+        {{errors}}
+    </div>
+{% endif %}
 </body>
 {% endblock %}

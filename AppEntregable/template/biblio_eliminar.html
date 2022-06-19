@@ -1,0 +1,14 @@
+{% extends "padre.html" %}
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<h3 class="m-2" style="color : #ff0000;"> Estas por eliminar {{object.nombre}}, estas seguro?</h3>
+
+<form method="POST">
+    {% csrf_token %}
+    <button class="btn btn-danger m-2" type="submit">Eliminar</button>
+</form>
+
+
+{% endblock %}

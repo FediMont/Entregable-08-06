@@ -21,6 +21,7 @@ class Bibliotecas(models.Model):
     imagen = models.URLField(max_length=300, blank=True, null=True)
     def __str__(self):
         return self.nombre
+    
 
 class Libro(models.Model):
     nombre_libro = models.CharField(max_length=100)
