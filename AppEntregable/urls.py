@@ -6,7 +6,6 @@ urlpatterns = [
     path("sesion_cerrar/", sesion_cerrar, name="sesion_cerrar"),
     path("sesion_registrar/", sesion_registrar, name="sesion_registrar"),
 
-
     path("", inicio, name="inicio"),
     path("usuario/", usuario, name="Usuario"),
     path("crearUsuario/", usuario_crear, name="Crear_Usuario"),

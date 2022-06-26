@@ -6,7 +6,7 @@ from django.template import loader
 from AppEntregable.forms import *
 from AppEntregable.models import *
 from django.views.generic import ListView, DetailView, CreateView, DeleteView, UpdateView
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm #, UserCreationForm
 from django.contrib.auth import authenticate, login, logout
 
 #Pestaña de inicio
